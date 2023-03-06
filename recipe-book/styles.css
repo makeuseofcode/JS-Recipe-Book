@@ -1,0 +1,117 @@
+/* Styling for the page */
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  padding: 20px;
+  left: 0;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 150px 5%;
+}
+
+.left-column {
+  width: 25%;
+}
+
+.right-column {
+  width: 65%;
+}
+
+/* Styling for the Add Recipes form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #3338;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for list of recipes */
+#recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+#no-recipes {
+    display: flex;
+    background-color: #FFCCCC;
+    padding: 20px;
+    border-radius: 8px;	
+	margin-top: 44px;
+}
+
+/* styling for single recipe div */
+.recipe {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.recipe h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.recipe ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recipe ul li {
+  margin-bottom: 5px;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Search label styling */
+label[for="search-box"] {
+  display: block;
+  margin-bottom: 10px;
+}
